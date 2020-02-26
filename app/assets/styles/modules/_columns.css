@@ -1,0 +1,32 @@
+.column-layout {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+
+    @mixin atMedium {
+        flex-direction: row;
+    }
+}
+
+.one-third-column {
+    flex: 36%;
+    text-align: center;
+
+    &--added-padding {
+        padding-right: 1.5rem;
+    } 
+}
+
+.two-third-column {
+    flex: 64%;
+
+        &__t-margin-until-medium {
+        margin-top: 1rem;
+    }
+
+    @mixin atMedium {
+        &__t-margin-until-medium {
+            margin-top: 0;    
+        }
+    }
+}
