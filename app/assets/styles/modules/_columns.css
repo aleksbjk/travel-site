@@ -30,3 +30,17 @@
         }
     }
 }
+
+.half-column {
+    flex: 50%;
+    
+        &--extra-padding-r {
+        padding-right: 0;
+    }
+    
+       @mixin atSmall {
+            &--extra-padding-r {
+                padding-right: 6rem;
+            }
+        }
+}
