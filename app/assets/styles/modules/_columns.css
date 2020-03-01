@@ -6,15 +6,25 @@
     @mixin atMedium {
         flex-direction: row;
     }
+
+    &--t-padding {
+        padding-top: 80px;
+    }
 }
 
 .one-third-column {
-    flex: 36%;
-    text-align: center;
+    flex: 33%;
+    display: flex;
 
     &--added-padding {
-        padding-right: 1.5rem;
+        @mixin atMedium {
+            padding-right: 1.5rem;
+        }
     } 
+
+    &--text-center {
+        text-align: center;
+    }
 }
 
 .two-third-column {
